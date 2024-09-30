@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+  <html>
+  <head><title>{{ recipe.title }}</title></head>
+  <body>
+    <h1>{{ recipe.title }}</h1>
+    <p>{{ recipe.description }}</p>
+    <p>Время приготовления: {{ recipe.cooking_time }} минут</p>
+    <p>Ингредиенты: {{ recipe.ingredients }}</p>
+    <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}">
+    <a href="{% url 'home' %}">На главную</a>
+  </body>
+  </html>
